@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<conteudo>
+    <cards>
+        <nome>Juliano</nome>
+        <image src='img/integrante3.jpeg'>Foto Juliano</image>
+        <funcao>Desenvolvedor Web, Banco de Dados e C#</funcao>
+    </cards>
+    <cards>
+        <nome>Juliano</nome>
+    </cards>
+</conteudo>
