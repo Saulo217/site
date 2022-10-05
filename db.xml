@@ -3,9 +3,37 @@
     <cards>
         <nome>Juliano</nome>
         <image src='img/integrante3.jpeg'>Foto Juliano</image>
-        <funcao>Desenvolvedor Web, Banco de Dados e C#</funcao>
+        <funcao>Desenvolvedor Web</funcao>
     </cards>
     <cards>
-        <nome>Juliano</nome>
+        <nome>Yasmin</nome>
+        <image src='img/integrante2.jpg'>Foto Yasmin</image>
+        <funcao>Gestora e Desenvolvedora Mobile</funcao>
     </cards>
+    <cards>
+        <nome>Saulo</nome>
+        <image src='img/integrante.jpg'>Foto Saulo</image>
+        <funcao>Desenvolvedor Mobile</funcao>
+    </cards>
+    <objetivos>
+        <title>Agilidade</title>
+        <text>Facilitar o acesso nos agendamentos de consultas.</text>
+        <icons>fas fa-laptop-medical</icons>
+    </objetivos>
+    <objetivos>
+        <title>Eficiência</title>
+        <text>Aumenta o acesso da população a saúde pública.</text>
+        <icons>fas fa-user-friends</icons>
+    </objetivos>
+    <objetivos>
+        <title>Segurança</title>
+        <text>Em casos emergenciais facilita o acesso ao samu.</text>
+        <icons>fas fa-ambulance</icons>
+    </objetivos>
+    <objetivos>
+        <title>Modernidade</title>
+        <text>Auxilia nas melhorias dos serviços de saúde.</text>
+        <icons>fas fa-hospital</icons>
+    </objetivos>
+
 </conteudo>

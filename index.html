@@ -25,16 +25,17 @@
   rel="stylesheet"
 />
 <title>Consultium</title>
+<script src="main.js"></script>
 </head>
 
 <body>
-     <div class="wrapper">
-        <nav class="navbar navbar-expand-lg w-100 d-flex flex-direction-row position-fixed" style="z-index: 900; background-color: #e3f2fd;">
-            <div class="container-fluid d-flex flex-direction-row-reverse">
-                <img src="img/other_logo.png" alt="Logo" style="width:70px; image-rendering: pixelated;">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+	<div class="position-absolute w-100 d-flex flex-column">
+        <nav class="navbar navbar-expand-lg w-100 d-flex flex-row position-fixed" style="z-index: 900; background-color: #e3f2fd;">
+            <div class="container-fluid d-flex justify-content-between w-100">
+                <img src="img/other_logo.png" alt="Logo" style="width:70px;">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
                 <div class="float-left" id="collapsibleNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -62,172 +63,78 @@
               </div>
             </div>
         </nav>
-        <div id="home">
-            <div class="row p-9 pb-0 align-items-center rounded-3 position-relative">
-                <div class="col-lg-9 p-5 p-lg-4 pt-lg-3">
-                    <img src="img/co.jpeg" alt="imagem Consultium">
-                    <h1>Bem Vindo ao Consultium!</h1>
-                    <p class="lead">Um jeito facil e rapido de agendar sua consulta e sem precisar sair de casa.</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Baixe o Aplicativo</button>
-                    </div>
-                </div>
-            </div>
+        <div class="position-relative d-flex flex-column w-100 h-100 mt-25" style="margin-top: 150px; margin-bottom: 120px;">
+            <div class="d-flex flex-column h-100 align-self-center">
+				<h1>Bem Vindo ao Consultium!</h1>
+            	<p class="lead">Um jeito facil e rapido de agendar sua consulta e sem precisar sair de casa.</p>
+            	<div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                	<button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Baixe o Aplicativo</button>
+            	</div>
+			</div>
         </div>
-        <div id="servicos" class="block d-flex flex-column position-relative">
-            <div class="container">
-                <h2 class="title text-center">Nossos Objetivos</h2>
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                        <a href="#" class="destaque">  
-                            <div class="container mb-3">
-                                <i class='fas fa-laptop-medical' style='font-size:100px'></i>
-                            </div>
-                            <h5>Agilidade</h5>
-                            <p class="mb-0 text-body">
-                                Facilita o acesso nos agendamentos de consultas.
-                            </p>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                        <a href="#" class="destaque ">  
-                            <div class="container mb-3">
-                                <i class='fas fa-user-friends' style='font-size:100px'></i>
-                            </div>
-                            <h5>Eficiência</h5>
-                            <p class="mb-0 text-body">
-                                Aumenta o acesso da população a saúde pública.
-                            </p>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                        <a href="#" class="destaque">  
-                            <div class="container mb-3">
-                                <i class='fas fa-ambulance' style='font-size:100px'></i>
-                            </div>
-                            <h5>Segurança</h5>
-                            <p class="mb-0 text-body">
-                                Em casos emergenciais facilita o acesso ao samu.
-                            </p>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                        <a href="#" class="destaque">  
-                            <div class="container mb-3">
-                                <i class='far fa-hospital' style='font-size:100px'></i>
-                            </div>
-                            <h5>Modernidade</h5>
-                            <p class="mb-0 text-body">
-                                Auxilia nas melhorias dos serviços de saúde.
-                            </p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="section2" class="d-flex flex-direction-row justify-content-between container-fluid mb-2" style="padding:50px 40px;">
-            <div class="col-md-6 align-self-right">
-                <h2 class="title">POR QUÊ?</h2>
-      <h4 class="subtitle">
-        <em>Consultium(latim):significa consultar.</em>
-    </h4>
-      <p>
-        O tema escolhido surgiu em decorrência do estado crítico da saúde da população 
-        brasileira de forma geral, especialmente nesse período pandêmico, o Consultium tem o 
-        intuito de tentar auxiliar na melhoria da saúde da população do Vale do Ribeira, 
-        facilitando o acesso a consultas médicas e ambulâncias. O assunto 
-        estudado tem a intenção de auxiliar a população de forma geral.
-      </p>
-    </div>
-    <div id="carousel" data-bs-interval="3000" class="d-flex flex-direction-row justify-content-between float-end" w-75 carousel slide data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="img/graf3.jpeg" class="d-block w-60 img-fluid" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="img/graf2.jpeg" class="d-block w-60 img-fluid" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="img/graf1.jpeg" class="d-block position-relative w-100 img-fluid" alt="...">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="section3" class="d-flex flex-row justify-content-around container-fluid " style="padding:50px 40px;">
-    <div class="container mt-5">
-          
-      <ul class="list-group list-group-horizontal d-flex justify-content-around">
-        <li class="list-group">
-          <div class="card" style="width:200px">
-            <img class="card-img-top" src="img/integrante3.jpeg" alt="Card image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">Juliano Rodrigues</h4>
-              <p class="card-text">Desenvolvedor Web, Banco de Dados</p>
-              <a href="#" class="btn btn-primary">Contato</a>
-            </div>
-          </div>
-
-        </li>
-        <li class="list-group">
-          <div class="card" style="width:200px">
-            <img class="card-img-top" src="img/ny.png" alt="Card image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">Saulo Freitas</h4>
-              <p class="card-text">Desenvolvedor Mobile, Banco de Dados</p>
-              <a href="#" class="btn btn-primary">Contato</a>
-            </div>
-          </div>
-        </li>
-        <li class="list-group">
-          <div class="card" style="width:250px">
-            <img class="card-img-top" src="img/integrante2.jpg" alt="Card image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">Yasmin Guerra</h4>
-              <p class="card-text">Relatorio</p>
-              <a href="#" class="btn btn-primary">Contato</a>
-            </div>
-          </div>
-
-        </li>
-      </ul>
-
-
-    </div>
-  </div>
-     </div>
-  
-  </section>
-  <!--Section: Author-->
-  <footer class="bg-dark text-center text-white">
-    <!-- Grid container -->
-    <div class="container p- pb-1">
-      <!-- Section: Social media -->
-      <section class="mb-3">
-  
-        <!-- Google -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-google"></i
-        ></a>
-  
-        <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-instagram"></i
-        ></a>
-  
-        <!-- Linkedin -->
-        <a class="btn btn-outline-light btn-floating m-1" href="" role="button"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
-  
-      </section>
-  
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background: color #000;">
-      © 2022 Copyright:Advance
-    </div>
-    <!-- Copyright -->
-  </footer>
-     </div>
+		<div id="servicos" class="position-relative d-flex flex-column position-relative" style="margin-bottom: 120px;">
+			<div class="container">
+				<h2 class="title text-center">Nossos Objetivos</h2>
+				<div class="row" style="padding-top: 65px;">
+					<script type="text/javascript"> objetivos(); </script>
+				</div>
+			</div>
+		</div>
+		<div id="section2" class="d-flex flex-direction-row justify-content-between container-fluid mb-2" style="padding:50px 40px;">
+			<div class="col-md-6 align-self-right">
+				<h2 class="title">POR QUÊ?</h2>
+				  <h4 class="subtitle">
+						<em>
+							Consultium(latim):significa consultar.
+						</em>
+					</h4>
+				  <p>
+					O tema escolhido surgiu em decorrência do estado crítico da saúde da população 
+					brasileira de forma geral, especialmente nesse período pandêmico, o Consultium tem o 
+					intuito de tentar auxiliar na melhoria da saúde da população do Vale do Ribeira, 
+					facilitando o acesso a consultas médicas e ambulâncias. O assunto 
+					estudado tem a intenção de auxiliar a população de forma geral.
+				  </p>
+			</div>
+			<div id="carousel" data-bs-interval="3000" class="d-flex flex-direction-row justify-content-between float-end" w-75 carousel slide data-bs-ride="carousel">
+				  <div class="carousel-inner">
+					<div class="carousel-item active">
+						  <img src="img/graf3.jpeg" class="d-block w-60 img-fluid" alt="...">
+					</div>
+					<div class="carousel-item">
+						  <img src="img/graf1.jpeg" class="d-block position-relative w-100 img-fluid" alt="...">
+					</div>
+				  </div>
+			</div>
+		  </div>
+		<div id="section3" class="d-flex flex-row justify-content-around container-fluid " style="padding:50px 40px;">
+			<div class="container mt-5">
+				<ul class="list-group list-group-horizontal d-flex justify-content-around">
+					<script> cards(); </script>	
+				</ul>
+			</div>
+		  </div>
+		  <!--Section: Author-->
+		  <footer class="bg-dark text-center text-white">
+			<!-- Grid container -->
+			<div class="container p- pb-1">
+				  <!-- Section: Social media -->
+				  <section class="mb-3">
+					<!-- Google -->
+					<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+						<i class="fab fa-google"></i>
+					</a>
+					<!-- Instagram -->
+					<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<!-- Linkedin -->
+					<a class="btn btn-outline-light btn-floating m-1" href="" role="button">
+						<i class="fab fa-linkedin-in"></i>
+					</a>
+				</section>
+			</div>
+		</footer>
+	</div>
 </body>
 </html>
