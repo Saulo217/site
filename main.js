@@ -6,6 +6,8 @@ let xmlDoc = xmlhttp.responseXML;
 
 let allCards = xmlDoc.getElementsByTagName('cards');
 let allObj = xmlDoc.getElementsByTagName('objetivos');
+let post = xmlDoc.getElementsByTagName("post");
+
 
 function cards() {
     for(let i = 0; i < allCards.length; i++) {
@@ -40,4 +42,39 @@ function objetivos() {
             </div>`
         );
     }
+}
+
+function blog() {
+    for(let i = 0; i < post.length; i++) {
+        document.write(
+            `
+                <div class="card col mx-2 h-50" style="width: 18rem;">
+                    <img src="${post[i].getElementsByTagName("img")[0].getAttribute("src")}" class="card-img-top h-25" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">${post[i].getElementsByTagName("title")[0].childNodes[0].nodeValue}</h5>
+                        <p class="card-text">${post[i].getElementsByTagName("body")[0].childNodes[0].nodeValue}</p>
+                        <a href="postagem.html?cod=${post[i].getAttribute("cod")}" class="btn btn-primary">Ler Mais...</a>
+                    </div>
+                </div>
+            `
+        );
+    }
+}
+
+function postagem() {
+    const url = new URL(window.location.href);
+    const params = url.searchParams;
+    const cod = params.get("cod");
+    
+    document.write(
+        `
+            <h1>
+                ${post[cod].getElementsByTagName("title")[0].childNodes[0].nodeValue}
+            </h1>
+            <p>
+                ${post[cod].getElementsByTagName("body")[0].childNodes[0].nodeValue}
+            </p>
+            <img src="${post[cod].getElementsByTagName("img")[0].getAttribute("src")}">
+        `
+    );
 }
