@@ -36,18 +36,18 @@
         <icons>fas fa-hospital</icons>
     </objetivos>
     <post cod="0">
-        <title>Post 1</title>
-        <body>Lore ipsum dolor sei lá não decorei lorem ipsum</body>
+        <title>Cadastre-se de forma fácil</title>
+        <body>Aprenda como fazer seu 1° cadastro.</body>
         <img src="img/tcc/cad.png">Nome Da Imagem</img>
     </post>
     <post cod="1">
-        <title>Post 2</title>
-        <body>Lore ipsum dolor sei lá não decorei lorem ipsum</body>
+        <title>Escolha o profissional adequado.</title>
+        <body>Por meio de um chat você tera acesso a datas disponiveis para sua consulta.</body>
         <img src="img/tcc/service.png">Nome Da Imagem</img>
     </post>
     <post cod="2">
-        <title>Post 1</title>
-        <body>Lore ipsum dolor sei lá não decorei lorem ipsum</body>
+        <title>Altere aonde você estiver.</title>
+        <body>O endereço podera ser alterado com base em sua moradia para ser encontrado uma UPA mais proxima</body>
         <img src="img/tcc/user.png">Nome Da Imagem</img>
     </post>
 
